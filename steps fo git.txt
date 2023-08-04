@@ -1,0 +1,44 @@
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/user/projectml/.git/
+
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git add .
+
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git remote add origin https://github.com/deepakvs1/newrepo.git
+error: remote origin already exists.
+
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git remote add origin2 https://github.com/deepakvs1/newrepo.git               
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git push origin2 main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 21.59 MiB | 1.64 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/deepakvs1/newrepo.git
+ * [new branch]      main -> main
+
+user@DESKTOP-VIO11HB MINGW64 ~/projectml (main)
+$ git pull origin2 main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 658 bytes | 1024 bytes/s, done.
+From https://github.com/deepakvs1/newrepo
+ * branch            main       -> FETCH_HEAD
+   6ca9d7a..38efa0a  main       -> origin2/main
+Updating 6ca9d7a..38efa0a
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
